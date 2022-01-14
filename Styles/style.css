@@ -23,6 +23,46 @@ hr{
     
 }
 /* common style end */
+/* header start  */
+header{
+    padding:0px 30px;
+    background-color: rgb(143, 136, 134);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    padding: 20px;
+    width: 110px;
+    margin-right: 10px;
+}
+.logo h1{
+    font-size: 2rem;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+nav a{
+    background-color: #fbfbff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+nav a:hover{
+    background-color: #562EFF;
+    color: rgb(255, 255, 255);
+}
+/* header end */
 
 /* top player start  */
 main{
@@ -143,3 +183,86 @@ top players end
 
 
     /* latest course end  */
+
+    /* footer start  */
+footer{
+    width: 100%;
+    height: 70px;
+    padding: 2%;
+    color: white;
+    background-color: black;
+}
+footer p{
+    text-align: center;
+    
+}
+
+    /* footer end */
+
+
+/*------------------------
+ for mobile design start 
+------------------- */
+@media only screen and  (max-width:625px ) {
+  body{
+    background-color:#d2ccf3;   
+  }
+  header{
+      padding: 30px;
+      background-color: rgb(139, 55, 146);
+  }
+  nav{
+      flex-direction: column;
+  }
+  .logo{
+      flex-direction: column;
+  }
+
+  nav ul li{
+      display: block;
+      list-style: none;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      
+      
+  }
+  nav a{
+      font-weight: bold;
+      display: block;
+      padding: 10px 20px;
+      text-transform: uppercase;
+  }
+  .players{
+      grid-template-columns: 1fr;
+  }
+  .container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+     .blogs{
+         grid-template-columns: 1fr;
+     }
+     .all-course{
+         grid-template-columns: 1fr;
+     }
+     .section-title{
+         text-align: center;
+     }
+     .course-thumbnail img{
+        width: 324px;
+        height: 150px;
+    }
+    .course{
+        margin-top: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .course-info{
+        justify-content: space-between;
+        
+    }
+}
